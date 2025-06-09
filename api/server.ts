@@ -13,7 +13,7 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 
 // Routes
 app.use("/", statusRoutes);
-app.use("/players", playersRoutes);
+app.use("/api/v1/players", playersRoutes);
 
 // Start server
 app.listen(PORT, () => {

@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/ping", (req, res) => {
+router.get("/api/v1/ping", (req, res) => {
   res.send({
     status: "pong!",
   });
